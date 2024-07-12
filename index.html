@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="aashik" />
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <header>
+        <h1 class="h1">Student Registration System</h1>
+        <h2 class="h2">Register and manage student details easily.</h2>
+      </header>
+
+      <section>
+        <form id="student-form">
+          <label for="studentName">Student Name:</label>
+          <input
+            type="text"
+            id="studentName"
+            name="studentName"
+            required
+            pattern="[A-Za-z\s]+"
+          />
+
+          <label for="studentID">Student ID:</label>
+          <input
+            type="number"
+            id="studentID"
+            name="studentID"
+            required
+            pattern="\d+"
+          />
+
+          <label for="emailID">Email ID:</label>
+          <input type="email" id="emailID" name="emailID" required />
+
+          <label for="contactNo">Contact No:</label>
+          <input
+            type="number"
+            id="contactNo"
+            name="contactNo"
+            required
+            pattern="\d+"
+          />
+
+          <button type="button" onclick="addStudent()">Register</button>
+        </form>
+      </section>
+
+      <section id="student-list">
+        <table>
+          <h2>Registered Students</h2>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>ID</th>
+              <th>Email</th>
+              <th>Contact</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="students">
+            <!-- Student records will be displayed here -->
+          </tbody>
+        </table>
+      </section>
+
+      <footer>
+        <div class="footer">
+          <p>&copy; 2024 All rights reserved.</p>
+          <p>
+            Contact us:
+            <a href="mailto:aashikmansuri9636@gmail.com"
+              >aashikmansuri9636@gmail.com</a
+            >
+          </p>
+          <p>
+            Follow us on:
+            <a href="https://twitter.com/" target="_blank">Twitter</a>,
+            <a
+              href="https://www.linkedin.com/in/i-am-aashik-86b97b24a/"
+              target="_blank"
+              >Linkedin</a
+            >
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+          </p>
+          <p>
+            <a href="/privacy-policy">Privacy Policy</a> |
+            <a href="/terms-of-service">Terms of Service</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- gsap cdn -->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
