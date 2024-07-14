@@ -172,12 +172,6 @@ footer {
 }
 /* resposive */
 @media (max-width: 600px) {
-  body {
-    background-image: url("https://plus.unsplash.com/premium_photo-1671684686842-17206375372f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8MiUyMGNvbG91cnxlbnwwfHwwfHx8MA%3D%3D");
-    background-size: cover;
-    background-position: center;
-    font-size: 3vw;
-  }
   header {
     height: 100px;
     padding: 5px 1px;
@@ -241,10 +235,5 @@ footer {
   header .h1 {
     font-size: 6vw;
     line-height: 2vw;
-  }
-}
-@media (max-width: 1000) {
-  header .h1 {
-    font-size: 3vw;
   }
 }
