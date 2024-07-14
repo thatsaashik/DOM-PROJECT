@@ -234,6 +234,7 @@ footer {
 @media (max-width: 400) {
   header .h1 {
     font-size: 6vw;
-    line-height: 2vw;
+    line-height: 3vw;
+    height: 100%;
   }
 }
